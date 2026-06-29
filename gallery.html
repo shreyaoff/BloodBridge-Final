@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Blood Bridge</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="drop"></span>
+      Blood Bridge
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register Donor</a>
+      <a href="search.html">Search Donor</a>
+      <a href="request.html">Request Blood</a>
+      <a href="donors.html">Donor List</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
+    </nav>
+  </header>
+
+  <section class="page-heading">
+    <h1>Gallery</h1>
+    <div class="underline"></div>
+    <p class="page-desc">A look at blood donation drives and awareness moments from our community.</p>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <div class="gallery-item" data-caption="Donation Camp — A donor giving blood at a community donation camp.">
+        <img src="images/gallery-1.jpg" alt="Donor giving blood">
+        <div class="gallery-caption">
+          <h3>Donation Camp</h3>
+          <p>A donor giving blood at a community donation camp.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-caption="Health Checkup — A nurse checking a donor's vitals before donation.">
+        <img src="images/gallery-2.jpg" alt="Health checkup">
+        <div class="gallery-caption">
+          <h3>Health Checkup</h3>
+          <p>A nurse checking a donor's vitals before donation.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-caption="Red Cross Drive — A blood donation program organized under the Red Cross.">
+        <img src="images/gallery-3.jpg" alt="Red Cross drive">
+        <div class="gallery-caption">
+          <h3>Red Cross Drive</h3>
+          <p>A blood donation program organized under the Red Cross.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-caption="Collected Units — Blood bags labeled and sorted by blood group.">
+        <img src="images/gallery-4.jpg" alt="Blood bags">
+        <div class="gallery-caption">
+          <h3>Collected Units</h3>
+          <p>Blood bags labeled and sorted by blood group after collection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
+  </footer>
+
+  <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="common.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
