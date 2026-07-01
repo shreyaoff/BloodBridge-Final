@@ -74,3 +74,14 @@ body.dark-mode .form-card textarea {
   border-color: #555;
   color: #f1f1f1;
 }
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .form-section {
+    padding: 20px 14px 50px 14px;
+  }
+
+  .form-card {
+    padding: 24px 20px;
+  }
+}

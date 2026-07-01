@@ -208,10 +208,34 @@ body.dark-mode .footer {
   .navbar {
     flex-direction: column;
     gap: 12px;
+    padding: 14px 20px;
   }
 
   .nav-links {
     justify-content: center;
     gap: 10px;
+  }
+
+  .page-heading {
+    padding: 35px 20px 10px 20px;
+  }
+
+  .page-heading h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 13px;
+    padding: 5px 9px;
+  }
+
+  .dark-toggle {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 }

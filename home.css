@@ -1,12 +1,26 @@
 /* ===== Hero Section ===== */
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
   padding: 80px 40px 60px 40px;
 }
 
 .hero-text {
-  max-width: 620px;
-  margin: 0 auto;
+  max-width: 500px;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 380px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
 }
 
 .tagline {
@@ -192,8 +206,60 @@ body.dark-mode .cta p {
 }
 
 /* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 24px 40px 24px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 320px;
+    order: -1;
+  }
+}
+
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 28px;
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .slider-section {
+    padding: 10px 16px 40px 16px;
+  }
+
+  .slide img {
+    height: 220px;
+  }
+
+  .availability {
+    padding: 40px 16px;
+  }
+
+  .blood-grid {
+    gap: 12px;
+  }
+
+  .blood-card {
+    width: 100px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .blood-card {
+    width: 45%;
+  }
+
+  .cta {
+    padding: 40px 16px;
   }
 }

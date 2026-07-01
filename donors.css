@@ -74,3 +74,29 @@ body.dark-mode .donor-table tr:nth-child(even) {
 body.dark-mode .no-donors {
   color: #aaa;
 }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .table-section {
+    padding: 20px 16px 50px 16px;
+  }
+
+  .donor-table th,
+  .donor-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donor-table th,
+  .donor-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .delete-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

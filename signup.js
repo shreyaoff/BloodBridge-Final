@@ -4,10 +4,12 @@ signupForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const username = document.getElementById("signupUsername").value.trim();
+  const email = document.getElementById("signupEmail").value.trim();
   const password = document.getElementById("signupPassword").value.trim();
   const confirmPassword = document.getElementById("signupConfirmPassword").value.trim();
 
   document.getElementById("signupUsernameError").textContent = "";
+  document.getElementById("signupEmailError").textContent = "";
   document.getElementById("signupPasswordError").textContent = "";
   document.getElementById("signupConfirmPasswordError").textContent = "";
   document.getElementById("signupSuccessMsg").textContent = "";
@@ -16,6 +18,15 @@ signupForm.addEventListener("submit", function (event) {
 
   if (username === "") {
     document.getElementById("signupUsernameError").textContent = "Please enter a username.";
+    isValid = false;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "") {
+    document.getElementById("signupEmailError").textContent = "Please enter your email.";
+    isValid = false;
+  } else if (!emailPattern.test(email)) {
+    document.getElementById("signupEmailError").textContent = "Please enter a valid email address.";
     isValid = false;
   }
 
@@ -40,16 +51,26 @@ signupForm.addEventListener("submit", function (event) {
   }
 
   const users = JSON.parse(localStorage.getItem("users")) || [];
-  const existingUser = users.find(function (user) {
+
+  const usernameTaken = users.some(function (user) {
     return user.username === username;
   });
 
-  if (existingUser) {
+  if (usernameTaken) {
     document.getElementById("signupUsernameError").textContent = "This username is already taken.";
     return;
   }
 
-  users.push({ username: username, password: password });
+  const emailTaken = users.some(function (user) {
+    return user.email === email;
+  });
+
+  if (emailTaken) {
+    document.getElementById("signupEmailError").textContent = "This email is already registered.";
+    return;
+  }
+
+  users.push({ username: username, email: email, password: password });
   localStorage.setItem("users", JSON.stringify(users));
 
   document.getElementById("signupSuccessMsg").textContent = "Account created. Redirecting to login...";

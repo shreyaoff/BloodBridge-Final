@@ -5,6 +5,18 @@
   padding: 20px 30px 60px 30px;
 }
 
+.about-photo-wrap {
+  margin-bottom: 24px;
+}
+
+.about-photo {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
 .about-section p {
   font-size: 15px;
   line-height: 1.7;
@@ -20,16 +32,33 @@
 }
 
 .team-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.team-list li {
+.team-card {
   background-color: #fff;
   border: 1px solid #e8c9c9;
-  border-radius: 6px;
-  padding: 10px 16px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.team-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #f2e4e4;
+  border: 1px dashed #d8a9a9;
+  margin: 0 auto 12px auto;
+}
+
+.team-name {
   font-weight: bold;
+  font-size: 14px;
 }
 
 /* ===== Dark Mode (about page specific) ===== */
@@ -37,7 +66,23 @@ body.dark-mode .about-section p {
   color: #ddd;
 }
 
-body.dark-mode .team-list li {
+body.dark-mode .team-card {
   background-color: #2c2c2c;
   border-color: #444;
+}
+
+body.dark-mode .team-photo {
+  background-color: #3a2c2c;
+  border-color: #5a4444;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px 18px 50px 18px;
+  }
+
+  .team-card {
+    width: 130px;
+  }
 }

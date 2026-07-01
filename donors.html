@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donor List - Blood Bridge</title>
+  <script>
+    if (!localStorage.getItem("loggedInUser")) {
+      window.location.href = "signup.html";
+    }
+  </script>
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="donors.css">
 </head>
