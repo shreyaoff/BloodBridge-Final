@@ -15,7 +15,7 @@ a {
   color: inherit;
 }
 
-/* ===== Navbar ===== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -79,7 +79,7 @@ a {
   color: #fff;
 }
 
-/* ===== Dark Mode Toggle (floating bottom right) ===== */
+
 .dark-toggle {
   position: fixed;
   bottom: 24px;
@@ -95,7 +95,6 @@ a {
   z-index: 999;
 }
 
-/* ===== Buttons (used across pages) ===== */
 .btn {
   padding: 12px 24px;
   border-radius: 6px;
@@ -126,7 +125,6 @@ a {
   color: #fff;
 }
 
-/* ===== Page Heading Style (used across pages) ===== */
 .page-heading {
   text-align: center;
   padding: 50px 40px 10px 40px;
@@ -150,7 +148,6 @@ a {
   margin: 0 auto;
 }
 
-/* ===== Footer ===== */
 .footer {
   text-align: center;
   border-top: 1px solid #eee;
@@ -159,7 +156,6 @@ a {
   font-size: 14px;
 }
 
-/* ===== Dark Mode (base rules shared by all pages) ===== */
 body.dark-mode {
   background-color: #121212;
   color: #f1f1f1;
@@ -203,7 +199,6 @@ body.dark-mode .footer {
   color: #999;
 }
 
-/* ===== Responsive Navbar ===== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
