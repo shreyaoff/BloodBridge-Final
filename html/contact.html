@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Blood Bridge</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <a href="../index.html" class="logo">
+      <span class="drop"></span>
+      Blood Bridge
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="register.html">Register Donor</a>
+      <a href="gallery.html">Gallery</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Search Donor <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="search.html">Search Donor</a>
+          <a href="donors.html">Donor List</a>
+        </div>
+      </div>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="contact.html" class="active">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <a href="request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
+    </nav>
+  </header>
+
+  <!-- ===== Page Heading ===== -->
+  <section class="page-heading">
+    <h1>Contact Us</h1>
+    <div class="underline"></div>
+    <p class="page-desc">Have a question or want to get involved? Reach out to the Blood Bridge team.</p>
+  </section>
+
+  <!-- ===== Contact Content ===== -->
+  <section class="contact-section">
+
+    <div class="contact-info">
+      <p><strong>Address:</strong> Chakrapath, Kathmandu, Nepal</p>
+      <p><strong>Email:</strong> info@bloodbridge.com</p>
+      <p><strong>Phone:</strong> (01) 456-7890</p>
+      <p><strong>College:</strong> Malpi International College, Basundhara, Kathmandu — affiliated with Pokhara University</p>
+      <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+      <p><strong>Saturday:</strong> 10:00 AM - 3:00 PM</p>
+      <p><strong>Sunday:</strong> Closed</p>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="contactName" placeholder="Your name">
+      <input type="email" id="contactEmail" placeholder="Your email">
+      <textarea id="contactMessage" rows="5" placeholder="Your message"></textarea>
+      <p class="error-msg" id="contactError"></p>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p class="success-msg" id="contactSuccessMsg"></p>
+    </form>
+
+  </section>
+
+  <!-- ===== Map Section ===== -->
+  <section class="map-section">
+    <h2 class="map-heading">Find Us Here</h2>
+    <div class="map-frame">
+      <iframe
+        src="https://www.google.com/maps?q=Malpi+International+College+Basundhara+Kathmandu&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="../index.html#testimonials">Testimonials</a>
+    </div>
+    <p>&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
+  </footer>
+
+  <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

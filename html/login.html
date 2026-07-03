@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Blood Bridge</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="../index.html" class="logo">
+      <span class="drop"></span>
+      Blood Bridge
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="register.html">Register Donor</a>
+      <a href="gallery.html">Gallery</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Search Donor <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="search.html">Search Donor</a>
+          <a href="donors.html">Donor List</a>
+        </div>
+      </div>
+      <a href="login.html" class="active">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <a href="request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
+    </nav>
+  </header>
+
+  <section class="page-heading">
+    <h1>Account Login</h1>
+    <div class="underline"></div>
+    <p class="page-desc">Login to your Blood Bridge account.</p>
+  </section>
+
+  <section class="form-section">
+    <div class="form-card">
+
+      <form id="loginForm">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" placeholder="Enter your username">
+        <p class="error-msg" id="loginUsernameError"></p>
+
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email">
+        <p class="error-msg" id="loginEmailError"></p>
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password">
+        <p class="error-msg" id="loginPasswordError"></p>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <p class="success-msg" id="loginSuccessMsg"></p>
+      </form>
+
+      <p class="switch-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="../index.html#testimonials">Testimonials</a>
+    </div>
+    <p>&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
+  </footer>
+
+  <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

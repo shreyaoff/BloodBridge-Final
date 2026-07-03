@@ -48,7 +48,7 @@ searchBtn.addEventListener("click", function () {
   });
 });
 
-fetch("hospitals.json")
+fetch("../data/hospitals.json")
   .then(function (response) {
     return response.json();
   })
@@ -58,8 +58,8 @@ fetch("hospitals.json")
       var h = hospitals[i];
       var card = "<div class='hospital-card'>" +
         "<h3>" + h.name + "</h3>" +
-        "<p> " + h.address + "</p>" +
-        "<p> " + h.contact + "</p>" +
+        "<p>📍 " + h.address + "</p>" +
+        "<p>📞 " + h.contact + "</p>" +
         "<span class='hospital-type'>" + h.type + "</span>" +
         "</div>";
       $("#hospitalsGrid").append(card);

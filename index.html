@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blood Bridge - Donate Blood, Save Lives</title>
-  <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
@@ -17,16 +17,25 @@
 
     <nav class="nav-links">
       <a href="index.html" class="active">Home</a>
-      <a href="register.html">Register Donor</a>
-      <a href="search.html">Search Donor</a>
-      <a href="request.html">Request Blood</a>
-      <a href="donors.html">Donor List</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a href="login.html">Login</a>
-      <a href="signup.html">Sign Up</a>
-      <a href="request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
+      <a href="html/register.html">Register Donor</a>
+      <a href="html/gallery.html">Gallery</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Search Donor <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="html/search.html">Search Donor</a>
+          <a href="html/donors.html">Donor List</a>
+        </div>
+      </div>
+      <a href="html/login.html">Login</a>
+      <a href="html/signup.html">Sign Up</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="html/contact.html">Contact</a>
+          <a href="html/about.html">About</a>
+        </div>
+      </div>
+      <a href="html/request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
     </nav>
   </header>
 
@@ -40,8 +49,8 @@
         in a simple and organized way.
       </p>
       <div class="hero-buttons">
-        <a href="register.html" class="btn btn-primary">Become a Donor</a>
-        <a href="search.html" class="btn btn-outline">Find a Donor</a>
+        <a href="html/register.html" class="btn btn-primary">Become a Donor</a>
+        <a href="html/search.html" class="btn btn-outline">Find a Donor</a>
       </div>
     </div>
     <div class="hero-image">
@@ -53,13 +62,13 @@
     <div class="slider-wrapper">
       <div class="slider-track" id="sliderTrack">
         <div class="slide">
-          <img src="images/slider-1.jpg" alt="300ml of blood can save 1 precious life">
+          <img src="images/slider-1.jpg" alt="Volunteers and staff gathered at a blood donation drive">
         </div>
         <div class="slide">
-          <img src="images/slider-2.jpg" alt="Blood donation saves lives">
+          <img src="images/slider-2.jpg" alt="A blood donor being attended to by medical staff at a donation camp">
         </div>
         <div class="slide">
-          <img src="images/slider-3.jpg" alt="Give blood, give life">
+          <img src="images/slider-3.jpg" alt="World Blood Donor Day awareness campaign: Give blood, give now, give often">
         </div>
       </div>
       <button class="slider-btn prev" id="prevBtn">&#8249;</button>
@@ -117,20 +126,82 @@
     </div>
   </section>
 
+  <section class="faq-section" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="underline"></div>
+    <p class="section-desc">Quick answers to what people usually ask us</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <p class="faq-question">Who is eligible to donate blood?</p>
+        <p class="faq-answer">Most healthy adults between 18 and 60 years old, weighing at least 50kg, can donate. A quick health check is usually done at the donation site before you give blood.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How often can I donate blood?</p>
+        <p class="faq-answer">Generally, you can donate whole blood once every 3 to 4 months. This gives your body enough time to replenish blood cells safely.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Is my personal information safe on Blood Bridge?</p>
+        <p class="faq-answer">Yes. Your details are only used to help match you with people in need of blood and are not shared with anyone outside the platform.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">What should I do in a blood emergency?</p>
+        <p class="faq-answer">Click the "Emergency" button in the navigation bar to submit an urgent blood request with the blood group needed and your contact details.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Does it cost anything to register or search for donors?</p>
+        <p class="faq-answer">No. Blood Bridge is completely free to use for both donors and people searching for blood.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What People Say</h2>
+    <div class="underline"></div>
+    <p class="section-desc">Real experiences from donors and people we've helped connect</p>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I needed O- blood for my father at 2 AM and had no idea where to start. Blood Bridge helped me find a donor within the hour."</p>
+        <p class="testimonial-name">Anisha R.</p>
+        <p class="testimonial-role">Patient's Family Member</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Registering as a donor took less than five minutes. Since then I've been contacted twice for genuine emergencies, and both times I could help."</p>
+        <p class="testimonial-name">Bikash T.</p>
+        <p class="testimonial-role">Regular Donor</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The search by blood group and district made everything so much easier than posting on social media and waiting for a reply."</p>
+        <p class="testimonial-name">Sunita M.</p>
+        <p class="testimonial-role">Hospital Coordinator</p>
+      </div>
+    </div>
+  </section>
+
   <section class="cta">
     <h2>Ready to Save a Life?</h2>
     <p>Join Blood Bridge today and become part of Nepal's donor community.</p>
-    <a href="register.html" class="btn btn-primary">Register as a Donor</a>
+    <a href="html/register.html" class="btn btn-primary">Register as a Donor</a>
   </section>
 
   <footer class="footer">
-    <p>2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
+    <div class="footer-links">
+      <a href="html/about.html">About</a>
+      <a href="html/contact.html">Contact</a>
+      <a href="index.html#testimonials">Testimonials</a>
+    </div>
+    <p>&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
   </footer>
 
   <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="common.js"></script>
-  <script src="home.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

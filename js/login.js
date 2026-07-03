@@ -4,9 +4,11 @@ loginForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const username = document.getElementById("loginUsername").value.trim();
+  const email = document.getElementById("loginEmail").value.trim();
   const password = document.getElementById("loginPassword").value.trim();
 
   document.getElementById("loginUsernameError").textContent = "";
+  document.getElementById("loginEmailError").textContent = "";
   document.getElementById("loginPasswordError").textContent = "";
   document.getElementById("loginSuccessMsg").textContent = "";
 
@@ -14,6 +16,11 @@ loginForm.addEventListener("submit", function (event) {
 
   if (username === "") {
     document.getElementById("loginUsernameError").textContent = "Please enter your username.";
+    isValid = false;
+  }
+
+  if (email === "") {
+    document.getElementById("loginEmailError").textContent = "Please enter your email.";
     isValid = false;
   }
 
@@ -37,11 +44,11 @@ loginForm.addEventListener("submit", function (event) {
   }
 
   const matchedUser = users.find(function (user) {
-    return user.username === username && user.password === password;
+    return user.username === username && user.email === email && user.password === password;
   });
 
   if (!matchedUser) {
-    document.getElementById("loginPasswordError").textContent = "Incorrect password.";
+    document.getElementById("loginPasswordError").textContent = "Incorrect email or password.";
     return;
   }
 
@@ -49,6 +56,6 @@ loginForm.addEventListener("submit", function (event) {
   document.getElementById("loginSuccessMsg").textContent = "Login successful. Redirecting...";
 
   setTimeout(function () {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }, 1000);
 });
