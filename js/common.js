@@ -51,3 +51,15 @@ document.addEventListener("click", function (event) {
   });
 });
 
+// ===== Hamburger Menu Toggle (runs on every page) =====
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navLinks = document.getElementById("navLinks");
+
+if (hamburgerBtn && navLinks) {
+  hamburgerBtn.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("open");
+    hamburgerBtn.classList.toggle("open");
+    hamburgerBtn.setAttribute("aria-expanded", isOpen);
+  });
+}
+

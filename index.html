@@ -11,11 +11,16 @@
 
   <header class="navbar">
     <a href="index.html" class="logo">
-      <span class="drop"></span>
-      Blood Bridge
+      <img src="images/logo.png" alt="Blood Bridge">
     </a>
 
-    <nav class="nav-links">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
       <a href="index.html" class="active">Home</a>
       <a href="html/register.html">Register Donor</a>
       <a href="html/gallery.html">Gallery</a>
@@ -24,15 +29,17 @@
         <div class="dropdown-menu">
           <a href="html/search.html">Search Donor</a>
           <a href="html/donors.html">Donor List</a>
+          <a href="html/request.html">Request Blood</a>
         </div>
       </div>
-      <a href="html/login.html">Login</a>
       <a href="html/signup.html">Sign Up</a>
       <div class="dropdown">
         <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <span class="caret">&#9662;</span></button>
         <div class="dropdown-menu">
           <a href="html/contact.html">Contact</a>
           <a href="html/about.html">About</a>
+          <a href="html/terms.html">Terms &amp; Conditions</a>
+          <a href="html/services.html">Our Services</a>
         </div>
       </div>
       <a href="html/request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
@@ -79,7 +86,6 @@
 
   <section class="availability">
     <h2>Blood Availability</h2>
-    <div class="underline"></div>
     <p class="section-desc">Number of registered donors for each blood group</p>
 
     <div class="blood-grid" id="bloodGrid">
@@ -128,7 +134,6 @@
 
   <section class="faq-section" id="faq">
     <h2>Frequently Asked Questions</h2>
-    <div class="underline"></div>
     <p class="section-desc">Quick answers to what people usually ask us</p>
 
     <div class="faq-list">
@@ -161,7 +166,6 @@
 
   <section class="testimonials" id="testimonials">
     <h2>What People Say</h2>
-    <div class="underline"></div>
     <p class="section-desc">Real experiences from donors and people we've helped connect</p>
 
     <div class="testimonial-grid">
@@ -190,12 +194,19 @@
   </section>
 
   <footer class="footer">
-    <div class="footer-links">
-      <a href="html/about.html">About</a>
-      <a href="html/contact.html">Contact</a>
-      <a href="index.html#testimonials">Testimonials</a>
+    <div class="footer-top">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="Blood Bridge">
+      </a>
+      <div class="footer-links">
+        <a href="html/about.html">About</a>
+        <a href="html/contact.html">Contact</a>
+        <a href="html/services.html">Our Services</a>
+        <a href="html/terms.html">Terms &amp; Conditions</a>
+        <a href="index.html#testimonials">Testimonials</a>
+      </div>
     </div>
-    <p>&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
+    <p class="footer-copy">&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
   </footer>
 
   <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>

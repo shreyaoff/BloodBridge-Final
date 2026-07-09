@@ -34,6 +34,18 @@ loginForm.addEventListener("submit", function (event) {
   }
 
   const users = JSON.parse(localStorage.getItem("users")) || [];
+
+  if (username === "admin" && password === "admin123") {
+    localStorage.setItem("loggedInUser", "admin");
+    localStorage.setItem("isAdmin", "true");
+    document.getElementById("loginSuccessMsg").textContent = "Admin login successful. Redirecting...";
+
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 1000);
+    return;
+  }
+
   const accountExists = users.some(function (user) {
     return user.username === username;
   });
@@ -53,6 +65,7 @@ loginForm.addEventListener("submit", function (event) {
   }
 
   localStorage.setItem("loggedInUser", username);
+  localStorage.setItem("isAdmin", "false");
   document.getElementById("loginSuccessMsg").textContent = "Login successful. Redirecting...";
 
   setTimeout(function () {

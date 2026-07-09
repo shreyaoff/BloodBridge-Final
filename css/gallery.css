@@ -1,5 +1,6 @@
 /* ===== Gallery Section ===== */
 .gallery-section {
+  min-height: calc(100vh - 250px);
   padding: 30px 40px 60px 40px;
 }
 
@@ -122,6 +123,10 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
+  .gallery-section {
+    padding: 20px 20px 50px 20px;
+  }
+
   .gallery-item {
     width: 100%;
   }

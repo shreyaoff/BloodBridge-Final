@@ -1,0 +1,45 @@
+/* ===== Terms Section ===== */
+.terms-section {
+  min-height: calc(100vh - 250px);
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 40px 60px 40px;
+}
+
+.terms-section h2 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: #c8102e;
+}
+
+.terms-section h2:first-child {
+  margin-top: 0;
+}
+
+.terms-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.terms-section a {
+  color: #c8102e;
+  font-weight: bold;
+}
+
+.terms-proceed {
+  margin-top: 36px;
+  text-align: center;
+}
+
+body.dark-mode .terms-section p {
+  color: #ccc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .terms-section {
+    padding: 20px 20px 50px 20px;
+  }
+}

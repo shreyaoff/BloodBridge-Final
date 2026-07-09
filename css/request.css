@@ -1,8 +1,10 @@
 /* ===== Form Section ===== */
 .form-section {
+  min-height: calc(100vh - 250px);
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 30px 20px 60px 20px;
+  padding: 30px 40px 60px 40px;
 }
 
 .form-card {
@@ -74,7 +76,7 @@ body.dark-mode .form-card select {
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
   .form-section {
-    padding: 20px 14px 50px 14px;
+    padding: 20px 20px 50px 20px;
   }
 
   .form-card {

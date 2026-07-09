@@ -1,5 +1,6 @@
 /* ===== Table Section ===== */
 .table-section {
+  min-height: calc(100vh - 250px);
   padding: 30px 40px 60px 40px;
   overflow-x: auto;
 }
@@ -78,7 +79,7 @@ body.dark-mode .no-donors {
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .table-section {
-    padding: 20px 16px 50px 16px;
+    padding: 20px 20px 50px 20px;
   }
 
   .donor-table th,

@@ -1,8 +1,9 @@
 /* ===== About Section ===== */
 .about-section {
+  min-height: calc(100vh - 250px);
   max-width: 700px;
   margin: 0 auto;
-  padding: 20px 30px 60px 30px;
+  padding: 30px 40px 60px 40px;
 }
 
 .about-photo-wrap {
@@ -91,7 +92,7 @@ body.dark-mode .team-photo {
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
   .about-section {
-    padding: 20px 18px 50px 18px;
+    padding: 20px 20px 50px 20px;
   }
 
   .team-card {

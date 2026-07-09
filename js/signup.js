@@ -1,4 +1,11 @@
 const signupForm = document.getElementById("signupForm");
+const termsStatus = document.getElementById("termsStatus");
+
+if (localStorage.getItem("acceptedTerms") === "true") {
+  termsStatus.textContent = "Terms & Conditions accepted.";
+  termsStatus.classList.remove("terms-not-accepted");
+  termsStatus.classList.add("terms-accepted");
+}
 
 signupForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -12,9 +19,15 @@ signupForm.addEventListener("submit", function (event) {
   document.getElementById("signupEmailError").textContent = "";
   document.getElementById("signupPasswordError").textContent = "";
   document.getElementById("signupConfirmPasswordError").textContent = "";
+  document.getElementById("signupTermsError").textContent = "";
   document.getElementById("signupSuccessMsg").textContent = "";
 
   let isValid = true;
+
+  if (localStorage.getItem("acceptedTerms") !== "true") {
+    document.getElementById("signupTermsError").textContent = "Please read and accept the Terms & Conditions first.";
+    isValid = false;
+  }
 
   if (username === "") {
     document.getElementById("signupUsernameError").textContent = "Please enter a username.";

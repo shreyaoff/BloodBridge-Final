@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Blood Bridge</title>
+  <title>Terms &amp; Conditions - Blood Bridge</title>
   <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/terms.css">
 </head>
 <body>
 
@@ -38,8 +38,8 @@
         <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <span class="caret">&#9662;</span></button>
         <div class="dropdown-menu">
           <a href="contact.html">Contact</a>
-          <a href="about.html" class="active">About</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="about.html">About</a>
+          <a href="terms.html" class="active">Terms &amp; Conditions</a>
           <a href="services.html">Our Services</a>
         </div>
       </div>
@@ -49,57 +49,67 @@
 
   <!-- ===== Page Heading ===== -->
   <section class="page-heading">
-    <h1>About Blood Bridge</h1>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="page-desc">Please read these terms carefully before using Blood Bridge.</p>
   </section>
 
-  <!-- ===== About Content ===== -->
-  <section class="about-section">
-    <div class="about-photo-wrap">
-      <img src="../images/about-photo.jpg" alt="A donor giving blood" class="about-photo">
-    </div>
-
-    <h2 class="about-lead">Our Mission</h2>
+  <!-- ===== Terms Content ===== -->
+  <section class="terms-section">
+    <h2>1. About This Platform</h2>
     <p>
-      Blood Bridge exists to close the gap between people who are willing to
-      donate blood and people who urgently need it. Too often, finding a
-      donor in an emergency means scrolling through scattered social media
-      posts and hoping someone responds in time. We built a platform that
-      makes that process fast, organized, and reliable.
+      Blood Bridge is a student project built to help connect blood donors
+      with people who need blood. It is not a hospital, a certified blood
+      bank, or a medical service provider, and it does not replace
+      professional medical advice or emergency services.
     </p>
 
-    <h2 class="about-lead">What We Do</h2>
+    <h2>2. Accuracy of Information</h2>
     <p>
-      Our platform lets donors register their details in minutes, allows
-      anyone to search for available donors by blood group and location,
-      and gives people a way to raise an urgent blood request that reaches
-      the right people quickly. Every registered donor is added to a live,
-      searchable network, so help is never more than a few clicks away.
+      When you register as a donor or submit a blood request, you agree to
+      provide accurate and truthful information. Blood Bridge does not
+      verify donor eligibility, blood group accuracy, or medical history,
+      so any arrangement made between a donor and a requester should be
+      confirmed through proper medical channels before donation.
     </p>
 
-    <h2 class="about-lead">Our Approach</h2>
+    <h2>3. How Your Data Is Stored</h2>
     <p>
-      We believe reliable healthcare tools shouldn't be complicated. Our
-      product is designed to be simple enough for anyone to use in a moment
-      of urgency, while staying organized enough to be genuinely useful for
-      hospitals, donors, and families alike. This platform started as a
-      student-led initiative and continues to grow with that same
-      hands-on, problem-solving spirit.
+      This project stores account details, donor information, and blood
+      requests locally in your browser using localStorage. Data is not
+      sent to an external server or database, and it does not persist
+      across different browsers or devices.
     </p>
 
-    <h2>Our Team</h2>
-    <div class="team-list">
-      <div class="team-card">
-        <div class="team-photo"><img src="../images/team-shreya.jpg" alt="Shreya Dhakal"></div>
-        <p class="team-name">Shreya Dhakal</p>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><img src="../images/team-reegzen.jpg" alt="Reegzen Sangmo Thing"></div>
-        <p class="team-name">Reegzen Sangmo Thing</p>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><img src="../images/team-gambhir.jpg" alt="Gambhir Shrestha"></div>
-        <p class="team-name">Gambhir Shrestha</p>
-      </div>
+    <h2>4. User Responsibilities</h2>
+    <p>
+      Users agree not to misuse the platform, submit false information, or
+      use contact details found on Blood Bridge for any purpose unrelated
+      to blood donation.
+    </p>
+
+    <h2>5. Limitation of Liability</h2>
+    <p>
+      Blood Bridge is provided as-is, as an academic project. We are not
+      liable for any outcome resulting from a donor-requester connection
+      made through this platform, including missed donations, incorrect
+      information, or medical complications.
+    </p>
+
+    <h2>6. Changes to These Terms</h2>
+    <p>
+      These terms may be updated as the project evolves. Continued use of
+      Blood Bridge after changes are made means you accept the updated
+      terms.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      If you have questions about these terms, reach out through the
+      <a href="contact.html">Contact page</a>.
+    </p>
+
+    <div class="terms-proceed">
+      <button id="proceedBtn" class="btn btn-primary">I Accept — Proceed to Sign Up</button>
     </div>
   </section>
 
@@ -123,5 +133,6 @@
   <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
 
   <script src="../js/common.js"></script>
+  <script src="../js/terms.js"></script>
 </body>
 </html>

@@ -12,11 +12,16 @@
   <!-- ===== Navbar ===== -->
   <header class="navbar">
     <a href="../index.html" class="logo">
-      <span class="drop"></span>
-      Blood Bridge
+      <img src="../images/logo.png" alt="Blood Bridge">
     </a>
 
-    <nav class="nav-links">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
       <a href="../index.html">Home</a>
       <a href="register.html">Register Donor</a>
       <a href="gallery.html">Gallery</a>
@@ -25,15 +30,17 @@
         <div class="dropdown-menu">
           <a href="search.html" class="active">Search Donor</a>
           <a href="donors.html">Donor List</a>
+          <a href="request.html">Request Blood</a>
         </div>
       </div>
-      <a href="login.html">Login</a>
       <a href="signup.html">Sign Up</a>
       <div class="dropdown">
         <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <span class="caret">&#9662;</span></button>
         <div class="dropdown-menu">
           <a href="contact.html">Contact</a>
           <a href="about.html">About</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="services.html">Our Services</a>
         </div>
       </div>
       <a href="request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
@@ -43,7 +50,6 @@
   <!-- ===== Page Heading ===== -->
   <section class="page-heading">
     <h1>Search for a Donor</h1>
-    <div class="underline"></div>
     <p class="page-desc">Select a blood group and district to find matching registered donors.</p>
   </section>
 
@@ -82,7 +88,6 @@
   <!-- ===== Footer ===== -->
   <section class="hospitals-section">
     <h2>Nearby Blood Banks & Hospitals</h2>
-    <div class="underline"></div>
     <p class="section-desc">Blood banks and hospitals in Nepal where you can donate or request blood.</p>
     <div class="hospitals-grid" id="hospitalsGrid">
       <p>Loading...</p>
@@ -90,12 +95,19 @@
   </section>
 
   <footer class="footer">
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="../index.html#testimonials">Testimonials</a>
+    <div class="footer-top">
+      <a href="../index.html" class="footer-logo">
+        <img src="../images/logo.png" alt="Blood Bridge">
+      </a>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Our Services</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="../index.html#testimonials">Testimonials</a>
+      </div>
     </div>
-    <p>&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
+    <p class="footer-copy">&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>
   </footer>
 
   <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
