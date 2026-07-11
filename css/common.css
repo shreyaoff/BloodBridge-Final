@@ -17,8 +17,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-/* ===== Navbar ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,27 +26,41 @@ a {
   padding: 16px 40px;
   flex-wrap: wrap;
 }
-
 .logo {
   display: flex;
   align-items: center;
+  gap: 0px;
   padding: 4px 8px;
   border-radius: 8px;
 }
 
 .logo img {
-  height: 34px;
+  width: 40px;
+  height: 40px;
   display: block;
+  object-fit: contain;
+  margin-right: 0;
+}
+
+.logo-text,
+.logo-texts {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1;
+  margin-left: 0px;
+  color: #2b2b2b;
 }
 
 .footer-logo {
-  padding: 4px 8px;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  text-decoration: none;
 }
 
 .footer-logo img {
-  height: 26px;
-  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .nav-links {
@@ -300,6 +312,11 @@ body.dark-mode .navbar {
 
 body.dark-mode .logo {
   background-color: #fff;
+}
+
+body.dark-mode .logo-text,
+body.dark-mode .logo-texts {
+  color: #2b2b2b;
 }
 
 body.dark-mode .footer-logo {
