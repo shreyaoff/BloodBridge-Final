@@ -1,3 +1,8 @@
+:root {
+  --page-padding-x: 40px;
+  --page-padding-x-mobile: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -201,7 +206,7 @@ a {
 /* ===== Page Heading Style (used across pages) ===== */
 .page-heading {
   text-align: center;
-  padding: 50px 40px 10px 40px;
+  padding: 50px var(--page-padding-x) 10px var(--page-padding-x);
 }
 
 .page-heading h1 {
@@ -263,7 +268,7 @@ body.dark-mode .hamburger span {
 .footer {
   border-top: 1px solid #eee;
   color: #777;
-  padding: 30px 40px 20px 40px;
+  padding: 30px var(--page-padding-x) 20px var(--page-padding-x);
   font-size: 14px;
   margin-top: auto;
 }
@@ -433,7 +438,7 @@ body.dark-mode .footer-links a:hover {
   }
 
   .page-heading {
-    padding: 35px 20px 10px 20px;
+    padding: 35px var(--page-padding-x-mobile) 10px var(--page-padding-x-mobile);
   }
 
   .page-heading h1 {

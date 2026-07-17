@@ -3,7 +3,7 @@
   min-height: calc(100vh - 250px);
   max-width: 750px;
   margin: 0 auto;
-  padding: 30px 40px 60px 40px;
+  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .terms-section h2 {
@@ -40,6 +40,6 @@ body.dark-mode .terms-section p {
 /* ===== Responsive ===== */
 @media (max-width: 600px) {
   .terms-section {
-    padding: 20px 20px 50px 20px;
+    padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
   }
 }

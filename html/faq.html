@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services - Blood Bridge</title>
+  <title>FAQ - Blood Bridge</title>
   <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/services.css">
+  <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-
-  <!-- ===== Navbar ===== -->
   <header class="navbar">
     <a href="../index.html" class="logo">
       <img src="../images/logo.jpeg" alt="Blood Bridge"><span class="logo-text">Blood Bridge</span>
@@ -24,6 +22,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="../index.html">Home</a>
       <a href="register.html">Register Donor</a>
+      <a href="gallery.html">Gallery</a>
       <div class="dropdown">
         <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Search Donor <span class="caret">&#9662;</span></button>
         <div class="dropdown-menu">
@@ -32,49 +31,47 @@
           <a href="request.html">Request Blood</a>
         </div>
       </div>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
       <a href="signup.html">Sign Up</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Contact <span class="caret">&#9662;</span></button>
+        <div class="dropdown-menu">
+          <a href="contact.html">Contact Us</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="faq.html" class="active">FAQ</a>
+        </div>
+      </div>
       <a href="request.html" id="emergencyBtn" class="emergency-link">Emergency</a>
     </nav>
   </header>
 
-  <!-- ===== Page Heading ===== -->
   <section class="page-heading">
-    <h1>Our Services</h1>
-    <p class="page-desc">Everything Blood Bridge offers, in one place.</p>
+    <h1>Frequently Asked Questions</h1>
+    <p class="page-desc">Quick answers about registering, searching donors, and using Blood Bridge.</p>
   </section>
 
-  <!-- ===== Services Content ===== -->
-  <section class="services-section">
-    <div class="service-card">
-      <h2>Donor Registration</h2>
-      <p>Sign up as a donor in minutes with your blood group, location, and contact details, so you're ready to be found when someone needs your help.</p>
-    </div>
-
-    <div class="service-card">
-      <h2>Donor Search</h2>
-      <p>Search our donor network by blood group and district to quickly find people who are willing and able to donate near you.</p>
-    </div>
-
-    <div class="service-card">
-      <h2>Emergency Blood Requests</h2>
-      <p>Submit an urgent request when you or someone you know needs blood right away, no account required.</p>
-    </div>
-
-    <div class="service-card">
-      <h2>Hospital Directory</h2>
-      <p>Browse a list of nearby hospitals with their contact details, so you know where to go in a blood-related emergency.</p>
-    </div>
-
-    <div class="service-card">
-      <h2>Awareness &amp; Community</h2>
-      <p>Through our gallery and outreach efforts, we highlight donation drives and encourage more people to become regular donors.</p>
+  <section class="about-section">
+    <div class="faq-list">
+      <div class="faq-item">
+        <p class="faq-question">Who can register as a donor?</p>
+        <p class="faq-answer">Most healthy adults aged 18 and above who meet the local donation criteria can register and help save lives.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">How does the search feature work?</p>
+        <p class="faq-answer">You can search by blood group and location to find potential donors quickly and reach out to them directly.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">Is the platform free to use?</p>
+        <p class="faq-answer">Yes. Blood Bridge is designed to help people connect without any charge for basic donor and request services.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">What should I do in an emergency?</p>
+        <p class="faq-answer">Use the Emergency link in the navigation bar to submit an urgent request with the required blood group and contact details.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="footer-top">
       <a href="../index.html" class="footer-logo">
@@ -83,9 +80,8 @@
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="services.html">Our Services</a>
         <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="../index.html#testimonials">Testimonials</a>
+        <a href="faq.html">FAQ</a>
       </div>
     </div>
     <p class="footer-copy">&copy; 2026 Blood Bridge | A Project by Shreya Dhakal, Gambhir Shrestha and Reegzen Sangmo Thing</p>

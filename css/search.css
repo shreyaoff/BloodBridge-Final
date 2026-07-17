@@ -1,7 +1,7 @@
 /* ===== Search Section ===== */
 .search-section {
   min-height: calc(100vh - 250px);
-  padding: 30px 40px 60px 40px;
+  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .search-box {
@@ -109,7 +109,7 @@ body.dark-mode .no-results {
 @media (max-width: 600px) {
   .search-section,
   .hospitals-section {
-    padding: 20px 20px 50px 20px;
+    padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
   }
 
   .search-box {
@@ -125,7 +125,7 @@ body.dark-mode .no-results {
 
 /* ===== Nearby Hospitals Section ===== */
 .hospitals-section {
-  padding: 30px 40px 60px 40px;
+  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
   border-top: 1px solid #eee;
   text-align: center;
 }

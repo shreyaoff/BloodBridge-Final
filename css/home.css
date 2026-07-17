@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 50px;
   text-align: left;
-  padding: 40px 40px 60px 40px;
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   min-height: calc(100vh - 73px);
 }
 
@@ -53,7 +53,7 @@
 
 /* ===== Image Slider ===== */
 .slider-section {
-  padding: 10px 40px 50px 40px;
+  padding: 10px var(--page-padding-x) 50px var(--page-padding-x);
 }
 
 .slider-wrapper {
@@ -79,28 +79,6 @@
   object-fit: contain;
   background-color: #f9f9f9;
   display: block;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(200, 16, 46, 0.8);
-  color: #fff;
-  border: none;
-  font-size: 28px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  line-height: 1;
-}
-
-.slider-btn.prev { left: 10px; }
-.slider-btn.next { right: 10px; }
-
-.slider-btn:hover {
-  background-color: #9e0d24;
 }
 
 .slider-dots {
@@ -309,7 +287,7 @@ body.dark-mode .cta p {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 50px 24px 40px 24px;
+    padding: 50px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
   }
 
   .hero-text {
@@ -337,7 +315,7 @@ body.dark-mode .cta p {
   }
 
   .slider-section {
-    padding: 10px 16px 40px 16px;
+    padding: 10px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
   }
 
   .slide img {

@@ -6,7 +6,7 @@
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
-  padding: 30px 40px 60px 40px;
+  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .contact-info {
@@ -76,7 +76,7 @@ body.dark-mode .contact-form textarea {
 .map-section {
   max-width: 900px;
   margin: 50px auto 60px auto;
-  padding: 40px 30px 0 30px;
+  padding: 40px var(--page-padding-x) 0 var(--page-padding-x);
   border-top: 1px solid #eee;
   text-align: center;
 }
@@ -115,11 +115,11 @@ body.dark-mode .map-section iframe {
 @media (max-width: 600px) {
   .contact-section {
     flex-direction: column;
-    padding: 20px 20px 50px 20px;
+    padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
   }
 
   .map-section {
-    padding: 30px 18px 0 18px;
+    padding: 30px var(--page-padding-x-mobile) 0 var(--page-padding-x-mobile);
   }
 
   .map-section iframe {

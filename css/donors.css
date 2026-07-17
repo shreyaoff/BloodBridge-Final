@@ -1,7 +1,7 @@
 /* ===== Table Section ===== */
 .table-section {
   min-height: calc(100vh - 250px);
-  padding: 30px 40px 60px 40px;
+  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
   overflow-x: auto;
 }
 
@@ -79,7 +79,7 @@ body.dark-mode .no-donors {
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .table-section {
-    padding: 20px 20px 50px 20px;
+    padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
   }
 
   .donor-table th,

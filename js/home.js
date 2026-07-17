@@ -19,16 +19,6 @@ function goToSlide(index) {
 
 buildDots();
 
-$("#nextBtn").on("click", function () {
-  var next = (currentSlide + 1) % totalSlides;
-  goToSlide(next);
-});
-
-$("#prevBtn").on("click", function () {
-  var prev = (currentSlide - 1 + totalSlides) % totalSlides;
-  goToSlide(prev);
-});
-
 $("#sliderDots").on("click", "span", function () {
   goToSlide($(this).data("index"));
 });
@@ -36,14 +26,3 @@ $("#sliderDots").on("click", "span", function () {
 setInterval(function () {
   goToSlide((currentSlide + 1) % totalSlides);
 }, 4000);
-
-var donors = JSON.parse(localStorage.getItem("donors")) || [];
-
-$(".blood-count").each(function () {
-  var group = $(this).data("group");
-  var count = 0;
-  for (var i = 0; i < donors.length; i++) {
-    if (donors[i].bloodGroup === group) count++;
-  }
-  $(this).text(count);
-});
