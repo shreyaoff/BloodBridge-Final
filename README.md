@@ -3,7 +3,10 @@
 Blood Bridge is a front-end web app that connects blood donors with people who need blood — register as a donor, search the donor list by blood group/district, or raise an emergency blood request, all from one site.
 
 ## HomePage Preview
-<img width="949" height="433" alt="Screenshot 2026-07-15 115320" src="https://github.com/user-attachments/assets/8e9cb9cb-6662-49f8-98dd-19d8dac5efaf" />
+
+<img width="900" alt="Blood Bridge homepage - hero section" src="images/readme-preview-1.jpg" />
+
+<img width="900" alt="Blood Bridge homepage - hero section" src="images/readme-preview-2.jpg" />
 
 
 
