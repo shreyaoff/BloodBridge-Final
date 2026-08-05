@@ -3,14 +3,15 @@
   min-height: calc(100vh - 250px);
   max-width: 750px;
   margin: 0 auto;
-  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .terms-section h2 {
   margin-top: 28px;
   margin-bottom: 10px;
   font-size: 19px;
-  color: #c8102e;
+  color: #000;
+  font-weight: bold;
 }
 
 .terms-section h2:first-child {
@@ -20,7 +21,8 @@
 .terms-section p {
   font-size: 15px;
   line-height: 1.7;
-  color: #333;
+  color: #000;
+  font-weight: 500;
 }
 
 .terms-section a {
@@ -28,13 +30,69 @@
   font-weight: bold;
 }
 
-.terms-proceed {
+.terms-agree-box {
   margin-top: 36px;
   text-align: center;
 }
 
+.agree-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: color 0.3s ease;
+}
+
+.agree-check:hover {
+  color: #1e7e34;
+}
+
+.agree-check input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #28a745;
+  cursor: pointer;
+}
+
+.terms-proceed {
+  text-align: center;
+}
+
+/* "I Agree" button - gray until the checkbox is ticked, then green */
+.terms-proceed .btn-agree {
+  background-color: #b5b5b5;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: not-allowed;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terms-proceed .btn-agree.enabled {
+  background-color: #28a745;
+  cursor: pointer;
+}
+
+.terms-proceed .btn-agree.enabled:hover {
+  background-color: #1e7e34;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.35);
+}
+
 body.dark-mode .terms-section p {
-  color: #ccc;
+  color: #ddd;
+}
+
+body.dark-mode .terms-section h2 {
+  color: #fff;
 }
 
 /* ===== Responsive ===== */

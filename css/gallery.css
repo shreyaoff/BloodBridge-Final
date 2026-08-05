@@ -1,7 +1,7 @@
 /* ===== Gallery Section ===== */
 .gallery-section {
   min-height: calc(100vh - 250px);
-  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .gallery-grid {

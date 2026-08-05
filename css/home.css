@@ -15,7 +15,7 @@
 
 .hero-image {
   flex: 1;
-  max-width: 380px;
+  max-width: 520px;
 }
 
 .hero-image img {
@@ -25,7 +25,7 @@
 }
 
 .tagline {
-  color: #c8102e;
+  color: #000;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
@@ -53,7 +53,7 @@
 
 /* ===== Image Slider ===== */
 .slider-section {
-  padding: 10px var(--page-padding-x) 50px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .slider-wrapper {
@@ -75,10 +75,32 @@
 
 .slide img {
   width: 100%;
-  height: 320px;
+  height: 420px;
   object-fit: contain;
   background-color: #f9f9f9;
   display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(200, 16, 46, 0.8);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+.slider-btn:hover {
+  background-color: #9e0d24;
 }
 
 .slider-dots {
@@ -103,7 +125,7 @@
 /* ===== Blood Availability Section ===== */
 .availability {
   text-align: center;
-  padding: 50px 40px;
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   border-top: 1px solid #eee;
 }
 
@@ -131,12 +153,18 @@
   padding: 20px;
   width: 130px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.blood-card:hover {
+  background-color: #fff8e1;
+  border-color: #efe0b8;
 }
 
 .blood-type {
   font-size: 26px;
   font-weight: bold;
-  color: #c8102e;
+  color: #000;
 }
 
 .blood-count {
@@ -153,7 +181,7 @@
 /* ===== FAQ ===== */
 .faq-section {
   text-align: center;
-  padding: 60px 40px;
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   border-top: 1px solid #eee;
 }
 
@@ -169,6 +197,13 @@
   margin-bottom: 12px;
   padding: 16px 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateX(6px);
+  border-color: #c8102e;
+  box-shadow: 0 10px 24px rgba(200, 16, 46, 0.12);
 }
 
 .faq-question {
@@ -186,7 +221,7 @@
 
 .testimonials {
   text-align: center;
-  padding: 60px 40px;
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   border-top: 1px solid #eee;
 }
 
@@ -206,13 +241,20 @@
   width: 280px;
   text-align: left;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  background-color: #fff8e1;
+  border-color: #efe0b8;
 }
 
 .testimonial-text {
-  color: #444;
+  color: #333;
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .testimonial-name {
@@ -222,13 +264,14 @@
 
 .testimonial-role {
   font-size: 13px;
-  color: #c8102e;
+  color: #000;
+  font-weight: bold;
 }
 
 /* ===== Call To Action ===== */
 .cta {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   border-top: 1px solid #eee;
 }
 
@@ -268,9 +311,19 @@ body.dark-mode .blood-card {
   color: #f1f1f1;
 }
 
+body.dark-mode .blood-card:hover {
+  background-color: #3a3527;
+  border-color: #5a5342;
+}
+
 body.dark-mode .testimonial-card {
   background-color: #1e1e1e;
   border-color: #2a2a2a;
+}
+
+body.dark-mode .testimonial-card:hover {
+  background-color: #3a3527;
+  border-color: #5a5342;
 }
 
 body.dark-mode .testimonial-text {
@@ -299,7 +352,7 @@ body.dark-mode .cta p {
   }
 
   .hero-image {
-    max-width: 320px;
+    max-width: 420px;
     order: -1;
   }
 
@@ -315,15 +368,15 @@ body.dark-mode .cta p {
   }
 
   .slider-section {
-    padding: 10px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
+    padding: 30px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
   }
 
   .slide img {
-    height: 220px;
+    height: 320px;
   }
 
   .availability {
-    padding: 40px 16px;
+    padding: 30px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
   }
 
   .blood-grid {
@@ -342,6 +395,6 @@ body.dark-mode .cta p {
   }
 
   .cta {
-    padding: 40px 16px;
+    padding: 30px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
   }
 }

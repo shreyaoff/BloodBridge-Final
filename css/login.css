@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .form-card {
@@ -33,11 +33,13 @@
   border-radius: 6px;
   font-size: 15px;
   font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-card input:focus {
   outline: none;
   border-color: #c8102e;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.12);
 }
 
 .error-msg {

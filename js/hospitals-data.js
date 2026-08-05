@@ -1,0 +1,42 @@
+// ===== Hospitals Data (backup copy of data/hospitals.json) =====
+// This file makes sure the hospital directory always loads, even when
+// the site is opened directly from a folder (file://), where fetch()
+// of a local JSON file is blocked by the browser.
+var HOSPITALS_DATA = [
+  {
+    "name": "Bir Hospital Blood Bank",
+    "address": "Mahabauddha, Kathmandu",
+    "contact": "01-4221119",
+    "type": "Government"
+  },
+  {
+    "name": "Nepal Red Cross Society Blood Bank",
+    "address": "Kalimati, Kathmandu",
+    "contact": "01-4270650",
+    "type": "Non-profit"
+  },
+  {
+    "name": "Patan Hospital Blood Bank",
+    "address": "Lagankhel, Lalitpur",
+    "contact": "01-5522266",
+    "type": "Government"
+  },
+  {
+    "name": "Tribhuvan University Teaching Hospital",
+    "address": "Maharajgunj, Kathmandu",
+    "contact": "01-4412303",
+    "type": "Government"
+  },
+  {
+    "name": "Grande International Hospital",
+    "address": "Tokha Road, Kathmandu",
+    "contact": "01-5159266",
+    "type": "Private"
+  },
+  {
+    "name": "Manipal Teaching Hospital Blood Bank",
+    "address": "Phulbari, Pokhara",
+    "contact": "061-526416",
+    "type": "Private"
+  }
+];

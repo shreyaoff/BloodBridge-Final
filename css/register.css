@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
 }
 
 .form-card {
@@ -34,6 +34,7 @@
   font-size: 15px;
   font-family: inherit;
   resize: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-card input:focus,
@@ -41,6 +42,44 @@
 .form-card textarea:focus {
   outline: none;
   border-color: #c8102e;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.12);
+}
+
+/* ===== Have You Donated? Radio Group ===== */
+.radio-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.radio-group {
+  display: flex;
+  gap: 22px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.radio-group:hover {
+  border-color: #c8102e;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #c8102e;
+  cursor: pointer;
 }
 
 .error-msg {
@@ -75,6 +114,10 @@ body.dark-mode .form-card textarea {
   background-color: #1f1f1f;
   border-color: #555;
   color: #f1f1f1;
+}
+
+body.dark-mode .radio-group {
+  border-color: #555;
 }
 
 /* ===== Responsive ===== */

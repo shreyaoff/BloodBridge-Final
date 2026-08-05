@@ -49,7 +49,7 @@
   <!-- ===== Page Heading ===== -->
   <section class="page-heading">
     <h1>Register as a Donor</h1>
-    <p class="page-desc">Fill in your details below to join Blood Bridge as a registered blood donor.</p>
+    <p class="page-desc">Thank you for stepping up! Fill in your details below and become a registered donor.</p>
   </section>
 
   <!-- ===== Registration Form ===== -->
@@ -97,8 +97,16 @@
       <label for="lastDonation">Last Donation Date (if any)</label>
       <input type="text" id="lastDonation" placeholder="Select last donation date" readonly>
 
-      <label for="healthConditions">Any Serious or Health Conditions</label>
-      <textarea id="healthConditions" rows="4" placeholder="List any health conditions, or write 'None'"></textarea>
+      <span class="radio-label">Have you donated before?</span>
+      <div class="radio-group" id="donationStatus">
+        <label class="radio-option">
+          <input type="radio" name="haveDonated" value="Yes"> Yes
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="haveDonated" value="No"> No
+        </label>
+      </div>
+      <p class="error-msg" id="haveDonatedError"></p>
 
       <button type="submit" class="btn btn-primary">Register</button>
 

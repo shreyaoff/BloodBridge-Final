@@ -1,7 +1,7 @@
 /* ===== Table Section ===== */
 .table-section {
   min-height: calc(100vh - 250px);
-  padding: 30px var(--page-padding-x) 60px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   overflow-x: auto;
 }
 
@@ -15,16 +15,21 @@
 
 .donor-table th,
 .donor-table td {
-  border: 1px solid #e0c4c4;
+  border: 1px solid #000;
   padding: 12px 14px;
   text-align: left;
   font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
 .donor-table th {
   background-color: #fff;
-  color: #c8102e;
-  border-bottom: 2px solid #c8102e;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.donor-table tbody tr:hover {
+  background-color: #fce8eb;
 }
 
 .donor-table tr:nth-child(even) {
@@ -39,6 +44,7 @@
   border-radius: 5px;
   font-size: 13px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .delete-btn:hover {
@@ -59,13 +65,17 @@ body.dark-mode .donor-table {
 
 body.dark-mode .donor-table th {
   background-color: #1e1e1e;
-  color: #ff5468;
-  border-bottom-color: #ff5468;
+  color: #fff;
+  border-bottom-color: #000;
 }
 
 body.dark-mode .donor-table th,
 body.dark-mode .donor-table td {
-  border-color: #444;
+  border-color: #000;
+}
+
+body.dark-mode .donor-table tbody tr:hover {
+  background-color: #3a2022;
 }
 
 body.dark-mode .donor-table tr:nth-child(even) {

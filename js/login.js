@@ -35,8 +35,8 @@ loginForm.addEventListener("submit", function (event) {
 
   const users = JSON.parse(localStorage.getItem("users")) || [];
 
-  if (username === "shreya" && email === "shreyaaaoff60@gmail.com" && password === "Shreya@1121") {
-    localStorage.setItem("loggedInUser", "shreya");
+  if (username === "admin" && password === "admin123") {
+    localStorage.setItem("loggedInUser", "admin");
     localStorage.setItem("isAdmin", "true");
     document.getElementById("loginSuccessMsg").textContent = "Admin login successful. Redirecting...";
 
@@ -46,18 +46,22 @@ loginForm.addEventListener("submit", function (event) {
     return;
   }
 
-  const accountExists = users.some(function (user) {
-    return user.username === username;
-  });
+  let accountExists = false;
+  let matchedUser = null;
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].username === username) {
+      accountExists = true;
+      if (users[i].email === email && users[i].password === password) {
+        matchedUser = users[i];
+      }
+    }
+  }
 
   if (!accountExists) {
     window.location.href = "signup.html";
     return;
   }
-
-  const matchedUser = users.find(function (user) {
-    return user.username === username && user.email === email && user.password === password;
-  });
 
   if (!matchedUser) {
     document.getElementById("loginPasswordError").textContent = "Incorrect email or password.";

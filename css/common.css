@@ -30,6 +30,11 @@ a {
   border-bottom: 1px solid #eee;
   padding: 16px 40px;
   flex-wrap: wrap;
+  /* fixed header: stays at the top of the page while scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .logo {
   display: flex;
@@ -206,7 +211,7 @@ a {
 /* ===== Page Heading Style (used across pages) ===== */
 .page-heading {
   text-align: center;
-  padding: 50px var(--page-padding-x) 10px var(--page-padding-x);
+  padding: 40px var(--page-padding-x) 20px var(--page-padding-x);
 }
 
 .page-heading h1 {
@@ -223,6 +228,54 @@ a {
 .dropdown-menu a.active {
   background-color: #c8102e;
   color: #fff;
+}
+
+/* ===== Shared Page Banner (used on content pages) ===== */
+.page-banner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--page-padding-x) 10px var(--page-padding-x);
+}
+
+.page-banner img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.page-banner img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Simple Fade-In Animation (kept on the header only) ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: fadeIn 0.6s ease both;
+}
+
+/* ===== Button Hover Effects (used across pages) ===== */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Hamburger Menu (hidden on desktop) ===== */
@@ -313,6 +366,7 @@ body.dark-mode {
 body.dark-mode .navbar {
   background-color: #121212;
   border-bottom-color: #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-mode .logo {
@@ -438,7 +492,7 @@ body.dark-mode .footer-links a:hover {
   }
 
   .page-heading {
-    padding: 35px var(--page-padding-x-mobile) 10px var(--page-padding-x-mobile);
+    padding: 30px var(--page-padding-x-mobile) 15px var(--page-padding-x-mobile);
   }
 
   .page-heading h1 {

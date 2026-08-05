@@ -65,18 +65,22 @@ signupForm.addEventListener("submit", function (event) {
 
   const users = JSON.parse(localStorage.getItem("users")) || [];
 
-  const usernameTaken = users.some(function (user) {
-    return user.username === username;
-  });
+  let usernameTaken = false;
+  let emailTaken = false;
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].username === username) {
+      usernameTaken = true;
+    }
+    if (users[i].email === email) {
+      emailTaken = true;
+    }
+  }
 
   if (usernameTaken) {
     document.getElementById("signupUsernameError").textContent = "This username is already taken.";
     return;
   }
-
-  const emailTaken = users.some(function (user) {
-    return user.email === email;
-  });
 
   if (emailTaken) {
     document.getElementById("signupEmailError").textContent = "This email is already registered.";

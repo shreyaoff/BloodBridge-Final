@@ -4,11 +4,18 @@ bloodApp.controller("bloodController", function ($scope) {
   var donors = JSON.parse(localStorage.getItem("donors")) || [];
   var groupNames = ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"];
 
-  $scope.bloodGroups = groupNames.map(function (name) {
+  $scope.bloodGroups = [];
+
+  for (var i = 0; i < groupNames.length; i++) {
+    var name = groupNames[i];
     var count = 0;
-    for (var i = 0; i < donors.length; i++) {
-      if (donors[i].bloodGroup === name) count++;
+
+    for (var j = 0; j < donors.length; j++) {
+      if (donors[j].bloodGroup === name) {
+        count++;
+      }
     }
-    return { name: name, count: count };
-  });
+
+    $scope.bloodGroups.push({ name: name, count: count });
+  }
 });
