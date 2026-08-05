@@ -35,13 +35,18 @@ loginForm.addEventListener("submit", function (event) {
 
   const users = JSON.parse(localStorage.getItem("users")) || [];
 
-  if (username === "admin" && password === "admin123") {
-    localStorage.setItem("loggedInUser", "admin");
+  // Admin account - the only one who can view the Donor List
+  if (
+    username === "shreya" &&
+    email === "shreyaaaoff60@gmail.com" &&
+    password === "Shreya@1121"
+  ) {
+    localStorage.setItem("loggedInUser", "shreya");
     localStorage.setItem("isAdmin", "true");
     document.getElementById("loginSuccessMsg").textContent = "Admin login successful. Redirecting...";
 
     setTimeout(function () {
-      window.location.href = "../index.html";
+      window.location.href = "donors.html";
     }, 1000);
     return;
   }
