@@ -6,8 +6,6 @@ Blood Bridge is a front-end web app that connects blood donors with people who n
 
 <img width="900" alt="Blood Bridge homepage - hero section" src="images/readme-preview-1.jpg" />
 
-<img width="900" alt="Blood Bridge homepage - hero section" src="images/readme-preview-2.jpg" />
-
 
 
 ## What it does
