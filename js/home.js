@@ -1,4 +1,4 @@
-var currentSlide = 0;
+﻿var currentSlide = 0;
 var totalSlides = $(".slide").length;
 
 function buildDots() {
@@ -27,7 +27,7 @@ setInterval(function () {
   goToSlide((currentSlide + 1) % totalSlides);
 }, 4000);
 
-// ===== Blood Availability (plain JavaScript, no AngularJS needed) =====
+// Blood Availability (plain JavaScript, no AngularJS needed) =====
 function renderBloodAvailability() {
   var grid = document.getElementById("bloodGrid");
   if (!grid) {
@@ -58,3 +58,4 @@ function renderBloodAvailability() {
 }
 
 renderBloodAvailability();
+

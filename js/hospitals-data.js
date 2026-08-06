@@ -1,4 +1,4 @@
-// ===== Hospitals Data (backup copy of data/hospitals.json) =====
+﻿// Hospitals Data (backup copy of data/hospitals.json) =====
 // This file makes sure the hospital directory always loads, even when
 // the site is opened directly from a folder (file://), where fetch()
 // of a local JSON file is blocked by the browser.
@@ -40,3 +40,4 @@ var HOSPITALS_DATA = [
     "type": "Private"
   }
 ];
+

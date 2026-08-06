@@ -1,4 +1,4 @@
-/* ===== Services Section ===== */
+﻿/* Services Section */
 .services-section {
   min-height: calc(100vh - 250px);
   max-width: 900px;
@@ -47,7 +47,7 @@ body.dark-mode .service-card p {
   color: #bbb;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 600px) {
   .services-section {
     padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
@@ -57,3 +57,4 @@ body.dark-mode .service-card p {
     width: 100%;
   }
 }
+

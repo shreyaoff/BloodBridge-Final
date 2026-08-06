@@ -1,4 +1,4 @@
-/* ===== Search Section ===== */
+﻿/* Search Section */
 .search-section {
   min-height: calc(100vh - 250px);
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
@@ -42,7 +42,7 @@
   box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.12);
 }
 
-/* ===== Results ===== */
+/* Results */
 .results {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +93,7 @@
   margin-bottom: 10px;
 }
 
-/* ===== Dark Mode (search page specific) ===== */
+/* Dark Mode (search page specific) */
 body.dark-mode .search-field input,
 body.dark-mode .search-field select {
   background-color: #1f1f1f;
@@ -113,7 +113,7 @@ body.dark-mode .no-results {
   color: #aaa;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 600px) {
   .search-section,
   .hospitals-section {
@@ -131,7 +131,7 @@ body.dark-mode .no-results {
   }
 }
 
-/* ===== Nearby Hospitals Section ===== */
+/* Nearby Hospitals Section */
 .hospitals-section {
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
   border-top: 1px solid #eee;
@@ -203,3 +203,4 @@ body.dark-mode .hospital-card {
 body.dark-mode .hospital-card p {
   color: #bbb;
 }
+

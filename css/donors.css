@@ -1,4 +1,4 @@
-/* ===== Table Section ===== */
+﻿/* Table Section */
 .table-section {
   min-height: calc(100vh - 250px);
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
@@ -58,7 +58,7 @@
   display: none;
 }
 
-/* ===== Dark Mode (donor list page specific) ===== */
+/* Dark Mode (donor list page specific) */
 body.dark-mode .donor-table {
   background-color: #2c2c2c;
 }
@@ -86,7 +86,7 @@ body.dark-mode .no-donors {
   color: #aaa;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 768px) {
   .table-section {
     padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
@@ -111,3 +111,4 @@ body.dark-mode .no-donors {
     font-size: 12px;
   }
 }
+

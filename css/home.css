@@ -1,4 +1,4 @@
-/* ===== Hero Section ===== */
+﻿/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   flex-wrap: wrap;
 }
 
-/* ===== Image Slider ===== */
+/* Image Slider */
 .slider-section {
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
 }
@@ -122,7 +122,7 @@
   background-color: #c8102e;
 }
 
-/* ===== Blood Availability Section ===== */
+/* Blood Availability Section */
 .availability {
   text-align: center;
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
@@ -178,7 +178,7 @@
   color: #777;
 }
 
-/* ===== FAQ ===== */
+/* FAQ */
 .faq-section {
   text-align: center;
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
@@ -268,7 +268,7 @@
   font-weight: bold;
 }
 
-/* ===== Call To Action ===== */
+/* Call To Action */
 .cta {
   text-align: center;
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
@@ -398,3 +398,4 @@ body.dark-mode .cta p {
     padding: 30px var(--page-padding-x-mobile) 40px var(--page-padding-x-mobile);
   }
 }
+

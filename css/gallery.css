@@ -1,4 +1,4 @@
-/* ===== Gallery Section ===== */
+﻿/* Gallery Section */
 .gallery-section {
   min-height: calc(100vh - 250px);
   padding: 40px var(--page-padding-x) 60px var(--page-padding-x);
@@ -60,7 +60,7 @@
   line-height: 1.4;
 }
 
-/* ===== Lightbox ===== */
+/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -121,7 +121,7 @@
   cursor: pointer;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 480px) {
   .gallery-section {
     padding: 20px var(--page-padding-x-mobile) 50px var(--page-padding-x-mobile);
@@ -131,3 +131,4 @@
     width: 100%;
   }
 }
+

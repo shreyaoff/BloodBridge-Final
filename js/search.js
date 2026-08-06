@@ -1,4 +1,4 @@
-const searchBtn = document.getElementById("searchBtn");
+﻿const searchBtn = document.getElementById("searchBtn");
 const resultsContainer = document.getElementById("resultsContainer");
 
 searchBtn.addEventListener("click", function () {
@@ -48,7 +48,7 @@ searchBtn.addEventListener("click", function () {
   }
 });
 
-// ===== Nearby Hospitals (from data/hospitals.json) =====
+// Nearby Hospitals (from data/hospitals.json) =====
 function renderHospitals(hospitals) {
   $("#hospitalsGrid").empty();
   for (var i = 0; i < hospitals.length; i++) {
@@ -73,3 +73,4 @@ fetch("../data/hospitals.json")
   .catch(function () {
     renderHospitals(HOSPITALS_DATA);
   });
+

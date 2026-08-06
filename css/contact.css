@@ -1,4 +1,4 @@
-/* ===== Contact Section ===== */
+﻿/* Contact Section */
 .contact-section {
   min-height: calc(100vh - 250px);
   display: flex;
@@ -62,7 +62,7 @@
   font-weight: bold;
 }
 
-/* ===== Dark Mode (contact page specific) ===== */
+/* Dark Mode (contact page specific) */
 body.dark-mode .contact-info p {
   color: #ddd;
 }
@@ -74,7 +74,7 @@ body.dark-mode .contact-form textarea {
   color: #f1f1f1;
 }
 
-/* ===== Map Section (full size) ===== */
+/* Map Section (full size) */
 .map-section {
   max-width: 1200px;
   margin: 50px auto 60px auto;
@@ -111,7 +111,7 @@ body.dark-mode .map-heading {
   color: #f1f1f1;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 600px) {
   .contact-section {
     flex-direction: column;
