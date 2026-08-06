@@ -71,17 +71,11 @@
     </div>
   </section>
 
-  <section class="availability" ng-app="bloodApp" ng-controller="bloodController">
+  <section class="availability">
     <h2>Blood Availability</h2>
     <p class="section-desc">Live count of registered donors for every blood group</p>
 
-    <div class="blood-grid" id="bloodGrid">
-      <div class="blood-card" ng-repeat="group in bloodGroups">
-        <p class="blood-type">{{ group.name }}</p>
-        <p class="blood-count">{{ group.count }}</p>
-        <p class="blood-label">Donors</p>
-      </div>
-    </div>
+    <div class="blood-grid" id="bloodGrid"></div>
   </section>
 
   <section class="faq-section" id="faq">
@@ -165,9 +159,7 @@
   <button id="darkModeBtn" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/home.js"></script>
-  <script src="js/angular-app.js"></script>
 </body>
 </html>

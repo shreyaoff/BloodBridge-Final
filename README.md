@@ -8,6 +8,7 @@ Blood Bridge is a front-end web app that connects blood donors with people who n
 
 
 
+
 ## What it does
  
 - **Home page** with a hero section and quick links into the rest of the site.

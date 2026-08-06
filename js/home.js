@@ -26,3 +26,35 @@ $("#sliderDots").on("click", "span", function () {
 setInterval(function () {
   goToSlide((currentSlide + 1) % totalSlides);
 }, 4000);
+
+// ===== Blood Availability (plain JavaScript, no AngularJS needed) =====
+function renderBloodAvailability() {
+  var grid = document.getElementById("bloodGrid");
+  if (!grid) {
+    return;
+  }
+
+  var donors = JSON.parse(localStorage.getItem("donors")) || [];
+  var groupNames = ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"];
+  var html = "";
+
+  for (var i = 0; i < groupNames.length; i++) {
+    var count = 0;
+    for (var j = 0; j < donors.length; j++) {
+      if (donors[j].bloodGroup === groupNames[i]) {
+        count++;
+      }
+    }
+
+    html +=
+      "<div class='blood-card'>" +
+      "<p class='blood-type'>" + groupNames[i] + "</p>" +
+      "<p class='blood-count'>" + count + "</p>" +
+      "<p class='blood-label'>Donors</p>" +
+      "</div>";
+  }
+
+  grid.innerHTML = html;
+}
+
+renderBloodAvailability();
